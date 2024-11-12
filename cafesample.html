@@ -1,0 +1,539 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cozy Coffee Shop</title>
+
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Materialize CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="stylecafe.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-wrapper container">
+            <a href="#" class="brand-logo left">
+                <img src="./Pictures/coffeecup.png" alt="Logo" class="logo-icon"> 
+                <span class="logo-text"> Cozy Corners Coffee Club </span>
+            </a>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger">
+                <i class="material-icons">menu</i>
+            </a>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#specials">Specials</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">More<i class="material-icons right">arrow_drop_down</i></a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <!-- Dropdown Structure -->
+    <ul id="dropdown1" class="dropdown-content">
+        <li><a href="#!">About Us</a></li>
+        <li><a href="#!">Blog</a></li>
+        <li class="divider"></li>
+        <li><a href="#!">Events</a></li>
+    </ul>
+
+    <!-- Sidenav for mobile -->
+    <ul class="sidenav" id="mobile-demo">
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#specials">Specials</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#!">About Us</a></li>
+        <li><a href="#!">Blog</a></li>
+        <li><a href="#!">Events</a></li>
+    </ul>
+
+    <!-- Header Section with Parallax -->
+    <div class="parallax-container" id="parallax-header">
+        <div class="parallax"><img src="./Pictures/cafe.jpg" alt="Header Image"></div>
+        <div class="header-text">
+            <h1 id="header-text">Welcome to Cozy Corners Coffee Club</h1>
+            <p id="header-desc">Your daily dose of coffee and comfort</p>
+            <br>
+            <a class="btn waves-effect waves-light brown" href="#menu">Explore Menu</a>
+        </div>
+    </div>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu-section container">
+        <h1 class="center-align" id="header-menu">The Menu</h1>
+        <!-- Drinks Subsection -->
+        <h4 class="center-align">-- Drinks --</h4>
+        <div class="row">
+            <!-- Menu Item 1 -->
+            <div class="col s12 m6 l4">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="./Pictures/espresso.jpg" alt="Espresso">
+                        <span class="card-title">Espresso</span>
+                    </div>
+                    <div class="card-content">
+                        <p>Rich and smooth coffee shot</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="#">$3.50</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Menu Item 2 -->
+            <div class="col s12 m6 l4">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="./Pictures/cappuccino.jpg" alt="Cappuccino">
+                        <span class="card-title">Cappuccino</span>
+                    </div>
+                    <div class="card-content">
+                        <p>Perfect blend of espresso and foam</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="#">$4.00</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Menu Item 3 -->
+            <div class="col s12 m6 l4">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="./Pictures/latte.jpg" alt="Latte">
+                        <span class="card-title">Latte</span>
+                    </div>
+                    <div class="card-content">
+                        <p>Milk and espresso for a smooth taste</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="#">$4.50</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Menu Item 4 -->
+            <div class="col s12 m6 l4">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="./Pictures/mocha.jpg" alt="Mocha">
+                        <span class="card-title">Mocha</span>
+                    </div>
+                    <div class="card-content">
+                        <p>Chocolate and coffee blended to perfection</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="#">$5.00</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Menu Item 5 -->
+            <div class="col s12 m6 l4">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="./Pictures/macchiato.jpg" alt="Macchiato">
+                        <span class="card-title">Macchiato</span>
+                    </div>
+                    <div class="card-content">
+                        <p>Espresso topped with a splash of foamed milk</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="#">$3.75</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Menu Item 6 -->
+            <div class="col s12 m6 l4">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="./Pictures/americano.jpg" alt="Americano">
+                        <span class="card-title">Americano</span>
+                    </div>
+                    <div class="card-content">
+                        <p>Espresso with hot water for a bold flavor</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="#">$3.00</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Menu Item 7 -->
+            <div class="col s12 m6 l4">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="./Pictures/flatwhite.jpg" alt="Flat White">
+                        <span class="card-title">Flat White</span>
+                    </div>
+                    <div class="card-content">
+                        <p>Espresso with steamed milk for a smooth taste</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="#">$4.25</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Menu Item 8 -->
+            <div class="col s12 m6 l4">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="./Pictures/icedcoffee.jpg" alt="Iced Coffee">
+                        <span class="card-title">Iced Coffee</span>
+                    </div>
+                    <div class="card-content">
+                        <p>Cold brew coffee served over ice</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="#">$3.50</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Menu Item 9 -->
+            <div class="col s12 m6 l4">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="./Pictures/affogato.jpg" alt="Affogato">
+                        <span class="card-title">Affogato</span>
+                    </div>
+                    <div class="card-content">
+                        <p>Espresso poured over vanilla ice cream</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="#">$5.50</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Menu Item 10 -->
+            <div class="col s12 m6 l4">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="./Pictures/coldbrew.jpg" alt="Cold Brew">
+                        <span class="card-title">Cold Brew</span>
+                    </div>
+                    <div class="card-content">
+                        <p>Slow-steeped coffee served chilled</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="#">$4.00</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Menu Item 11 -->
+            <div class="col s12 m6 l4">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="./Pictures/frappe.jpg" alt="Frappe">
+                        <span class="card-title">Frappe</span>
+                    </div>
+                    <div class="card-content">
+                        <p>Blended coffee with ice for a frothy treat</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="#">$5.00</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Menu Item 12 -->
+            <div class="col s12 m6 l4">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="./Pictures/irishcoffee.jpg" alt="Irish Coffee">
+                        <span class="card-title">Irish Coffee</span>
+                    </div>
+                    <div class="card-content">
+                        <p>Coffee blended with Irish cream and topped with cream</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="#">$6.50</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Pastries Subsection -->
+        <h4 class="center-align">-- Pastries --</h4>
+        <div class="row">
+            <!-- Pastry Item 1 -->
+            <div class="col s12 m6 l4">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="./Pictures/croissant.jpg" alt="Croissant">
+                        <span class="card-title">Croissant</span>
+                    </div>
+                    <div class="card-content">
+                        <p>Flaky, buttery croissant, freshly baked</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="#">$2.50</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pastry Item 2 -->
+            <div class="col s12 m6 l4">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="./Pictures/muffins.jpg" alt="Blueberry Muffin">
+                        <span class="card-title">Blueberry Muffin</span>
+                    </div>
+                    <div class="card-content">
+                        <p>Moist muffin loaded with fresh blueberries</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="#">$3.00</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pastry Item 3 -->
+            <div class="col s12 m6 l4">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="./Pictures/cinnamonroll.jpg" alt="Cinnamon Roll">
+                        <span class="card-title">Cinnamon Roll</span>
+                    </div>
+                    <div class="card-content">
+                        <p>Soft and sweet cinnamon roll with glaze</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="#">$3.75</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pastry Item 4 -->
+            <div class="col s12 m6 l4">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="./Pictures/macaron.jpg" alt="Macaron">
+                        <span class="card-title">Assorted Macarons</span>
+                    </div>
+                    <div class="card-content">
+                        <p>Delicate French macarons in various flavors</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="#">$5.00</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pastry Item 5 -->
+            <div class="col s12 m6 l4">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="./Pictures/tiramisu.jpg" alt="Tiramisu">
+                        <span class="card-title">Tiramisu</span>
+                    </div>
+                    <div class="card-content">
+                        <p>Classic Italian dessert with layers of coffee-soaked ladyfingers and mascarpone cream</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="#">$6.00</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pastry Item 6 -->
+            <div class="col s12 m6 l4">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="./Pictures/pannacotta.jpg" alt="Panna Cotta">
+                        <span class="card-title">Panna Cotta</span>
+                    </div>
+                    <div class="card-content">
+                        <p>Silky Italian custard topped with fresh berries</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="#">$5.50</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Specials Section -->
+    <section id="specials" class="specials-section container">
+        <h2 class="center-align"> The Specials</h2>
+        <div class="row">
+            <!-- Special Item 1 -->
+            <div class="col s12 m6 l4">
+                <div class="card hoverable">
+                    <div class="card-image">
+                        <img src="./Pictures/special1.jpg" alt="Pumpkin Spice Latte">
+                        <span class="card-title">Pumpkin Spice Latte</span>
+                    </div>
+                    <div class="card-content">
+                        <p>Limited edition flavor with pumpkin spice and creamy milk</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="#">$5.00</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Special Item 2 -->
+            <div class="col s12 m6 l4">
+                <div class="card hoverable">
+                    <div class="card-image">
+                        <img src="./Pictures/special2.jpg" alt="Hazelnut Mocha">
+                        <span class="card-title">Hazelnut Mocha</span>
+                    </div>
+                    <div class="card-content">
+                        <p>Blend of hazelnut and rich chocolate mocha</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="#">$5.50</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Special Item 3 -->
+            <div class="col s12 m6 l4">
+                <div class="card hoverable">
+                    <div class="card-image">
+                        <img src="./Pictures/special3.jpg" alt="Caramel Macchiato">
+                        <span class="card-title">Caramel Macchiato</span>
+                    </div>
+                    <div class="card-content">
+                        <p>Espresso combined with rich caramel and steamed milk</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="#">$5.25</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Special Item 4 -->
+            <div class="col s12 m6 l4">
+                <div class="card hoverable">
+                    <div class="card-image">
+                        <img src="./Pictures/special4.jpg" alt="Matcha Latte">
+                        <span class="card-title">Matcha Latte</span>
+                    </div>
+                    <div class="card-content">
+                        <p>Freshly whisked matcha with steamed milk for a smooth taste</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="#">$5.75</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Special Item 5 -->
+            <div class="col s12 m6 l4">
+                <div class="card hoverable">
+                    <div class="card-image">
+                        <img src="./Pictures/special5.jpg" alt="Vanilla Sweet Cream Cold Brew">
+                        <span class="card-title">Vanilla Sweet Cream Cold Brew</span>
+                    </div>
+                    <div class="card-content">
+                        <p>Cold brew topped with sweet vanilla cream for a smooth finish</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="#">$5.50</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Special Item 6 -->
+            <div class="col s12 m6 l4">
+                <div class="card hoverable">
+                    <div class="card-image">
+                        <img src="./Pictures/special6.jpg" alt="Chai Latte">
+                        <span class="card-title">Chai Latte</span>
+                    </div>
+                    <div class="card-content">
+                        <p>Spiced chai with steamed milk for a warm, aromatic treat</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="#">$5.25</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section with Full-Width Carousel -->
+    <section id="gallery" class="gallery-section">
+        <h2 class="center-align">Gallery</h2>
+        <div class="carousel carousel-slider" id="gallery-carousel">
+            <a class="carousel-item" href="#one"><img src="./Pictures/gallery1.jpg" alt="Gallery Image 1"></a>
+            <a class="carousel-item" href="#two"><img src="./Pictures/gallery2.jpg" alt="Gallery Image 2"></a>
+            <a class="carousel-item" href="#three"><img src="./Pictures/gallery3.jpg" alt="Gallery Image 3"></a>
+            <a class="carousel-item" href="#four"><img src="./Pictures/gallery4.jpg" alt="Gallery Image 4"></a>
+            <a class="carousel-item" href="#five"><img src="./Pictures/gallery5.jpg" alt="Gallery Image 5"></a>
+        </div>
+    </section>
+
+    <!-- Contact Section with Image and Contact Details in a Row -->
+    <section id="contact" class="contact-section container">
+        <h2 class="center-align">Contact Us</h2>
+        <div class="row">
+            
+            <!-- Image on the Left -->
+            <div class="col s12 m6 contact-image-container">
+                <img src="./Pictures/map.jpg" alt="Our Location" class="contact-image"> <!-- Replace with the path to your location image -->
+            </div>
+
+            <!-- Contact Details on the Right -->
+            <div class="col s12 m6 contact-details">
+                <h5><i class="material-icons left">location_on</i> Location</h5>
+                <p>123 Coffee Street, Brewtown</p>
+
+                <h5><i class="material-icons left">access_time</i> Hours</h5>
+                <p>Mon-Fri: 8am - 8pm</p>
+                <p>Sat-Sun: 9am - 6pm</p>
+
+                <h5><i class="material-icons left">phone</i> Contact Number</h5>
+                <p>(123) 456-7890</p>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="page-footer brown darken-3">
+        <div class="container">
+            <div class="row">
+                <div class="col s12 center-align">
+                    <p>&copy; 2024 Cozy Coffee. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Materialize JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            // Initialize dropdown
+            $('.dropdown-trigger').dropdown();
+
+            // Initialize sidenav
+            $('.sidenav').sidenav();
+
+            // Initialize parallax
+            $('.parallax').parallax();
+
+            // Initialize carousel for gallery
+            $('.carousel.carousel-slider').carousel({
+                fullWidth: true,
+                indicators: true
+            });
+        });
+    </script>
+</body>
+</html>
